@@ -1,3 +1,11 @@
 * {
-    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.rubik_font {
+    font-family: 'Rubik Doodle Shadow', 'Comic Sans MS', handwriting;
 }
