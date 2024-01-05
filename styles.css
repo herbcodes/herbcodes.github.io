@@ -2,10 +2,15 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-    padding: 20px;
+h2.rubik_font {
+    font-size: 3em;
+}
+button.rubik_font {
+    font-size: 1.7em;
+    text-transform: uppercase;
 }
 
 .rubik_font {
     font-family: 'Rubik Doodle Shadow', 'Comic Sans MS', sans-serif, cursive;
+    
 }
