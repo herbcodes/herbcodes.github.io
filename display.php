@@ -137,7 +137,7 @@
                         $password = $_GET["password"];
                     }
                     if ($username == null || $password == null) {
-                        die("No command to do. <div style=\"margin-top: 20px\">
+                        die("<div class=\"alert alert-danger\"><h3 class=class=\"h3 list-group-item list-group-item-danger\">No command to do.</h3></div> <div style=\"margin-top: 20px\">
                         <div>
                             <button type=\"button\" class=\"w-100 mb-2 btn btn-lg rounded-3 btn-primary px-3 rubik_font\" id=\"register-btn\" onclick=\"window.location.href='index.php'\">Register</button>
                         </div>
@@ -151,11 +151,14 @@
                     if ($user == null) {
                         // if there is no user found with matching data
                         echo ("
+                        
                         <div class=\"text-center\">
                             <h2 class=\"h2 rubik_font\" id=\"registrationHeading\">LOGIN FAILED</h2>
                         </div>"
                         );
-                        echo "<h3 class=\"h3\">No account with matching data found.<br>Please try again!</h3>";
+                        echo "<div class=\"alert alert-danger\">";
+                        echo "<a class=\"h3 list-group-item list-group-item-danger\">No account with matching data found.<br>Please try again!</a>";
+                        echo "</div>";
                     } else {
                         // if there is a user found with matching data
                         echo ("
